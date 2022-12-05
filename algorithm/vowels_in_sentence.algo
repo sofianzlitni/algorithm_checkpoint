@@ -1,0 +1,16 @@
+ALGORITHM vowels_in_sentence
+VAR
+str : STRING :="This is a testing project";
+vowels: CHAR :=['a','e','u','i','o'];
+count: INTEGER = 0;
+
+
+BEGIN
+    FOR i in str DO 
+IF i in vowels THEN
+count +=1;
+END_IF
+num_vowels = count;
+END_FOR
+Write(num_vowels);
+END

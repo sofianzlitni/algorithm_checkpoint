@@ -1,0 +1,12 @@
+ALGORITHM length_in_sentence
+VAR
+    str : STRING : = "This is a testing project";
+    count : INTEGER = 0;
+BEGIN
+    FOR (int i-0; i < str.length(); i++) DO
+    IF (str.charAt[i] !='') THEN
+    count++;
+    END_IF
+    END_FOR
+    Write(count);
+END

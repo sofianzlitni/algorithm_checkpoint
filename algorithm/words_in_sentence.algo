@@ -1,0 +1,13 @@
+ALGORITHM words_in_sentence;
+VAR
+    str: STRING:"This is a testing project";
+    count: INTEGER=0;
+    
+BEGIN
+    FOR (i in str) DO
+    IF (i == " ") THEN
+    count+=1
+    END_IF
+END_FOR
+    Write(count)
+END
